@@ -34,4 +34,6 @@ steps:
   - '--region'
   - 'us-central1'
   - '--platform'
-  - 'managed
+  - 'managed'
+  # Optional: if you want to allow unauthenticated access
+  - '--allow-unauthenticated'
