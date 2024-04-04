@@ -22,14 +22,3 @@ steps:
   - 'managed'
   # Optional: if you want to allow unauthenticated access
   - '--allow-unauthenticated'
-
-# Step 4: Deployment to Cloud Deploy
-- name: 'gcr.io/cloud-builders/gcloud'
-  args:
-  - 'deploy'
-  - '--image'
-  - 'us-central1-docker.pkg.dev/mystical-ace-417007/docker-test-img/my-build:prod1'
-  - '--region'
-  - 'us-central1'
-  - '--platform'
-  - 'managed'
