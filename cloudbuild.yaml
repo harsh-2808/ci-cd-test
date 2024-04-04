@@ -39,13 +39,17 @@ steps:
   # Optional: if you want to allow unauthenticated access
   - '--allow-unauthenticated'
 
-  # Step 4: Deploy to Cloud Deploy
- - name: 'gcr.io/cloud-builders/gcloud'
-   args:
-   - 'deploy'
-   - 'releases'
-   - 'create'
-   - 'release-bta23qb1'
-   - '--delivery-pipeline=demo-bta2y5x'
-   - '--region'
-   - 'us-central1'  # Choose your desired region
+  # Step 3: Deployment to Cloud Run after image is pushed
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - 'deploy'
+  - 'releases'
+  - 'create'  # Replace with your service name
+  - 'release-bta23qb1'
+  - '--delivery-pipeline=demo-bta2y5x'
+  - '--region'
+  - 'us-central1'  # You can change this if you want to deploy to a different region
+  - '--platform'
+  - 'managed'
+  # Optional: if you want to allow unauthenticated access
+  - '--allow-unauthenticated'
