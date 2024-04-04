@@ -40,12 +40,12 @@ steps:
   - '--allow-unauthenticated'
 
   # Step 4: Deploy to Cloud Deploy
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args:
-      - 'deploy'
-      - 'releases'
-      - 'create'
-      - 'release-bta23qb1'
-      - '--delivery-pipeline=demo-bta2y5x'
-      - '--region'
-      - 'us-central1'  # Choose your desired region
+ - name: 'gcr.io/cloud-builders/gcloud'
+   args:
+   - 'deploy'
+   - 'releases'
+   - 'create'
+   - 'release-bta23qb1'
+   - '--delivery-pipeline=demo-bta2y5x'
+   - '--region'
+   - 'us-central1'  # Choose your desired region
