@@ -28,7 +28,7 @@ steps:
   args:
   - 'deploy'
   - 'releases'
-  #- 'create'  # Replace with your service name
+  - 'create'
   - 'release-bta23qb'
   - '--delivery-pipeline=demo-bta2y5x'
   - '--region'
