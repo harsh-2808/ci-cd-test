@@ -45,7 +45,7 @@ steps:
       - 'deploy'
       - 'releases'
       - 'create'
-      - 'release-bta23qb'
+      - 'release-bta23qb1'
       - '--delivery-pipeline=demo-bta2y5x'
       - '--region'
       - 'us-central1'  # Choose your desired region
