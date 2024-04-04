@@ -23,7 +23,7 @@ steps:
   # Optional: if you want to allow unauthenticated access
   - '--allow-unauthenticated'
 
-  # Step 3: Deployment to Cloud Deploy after image is pushed
+# Step 4: Deployment to Cloud Deploy after image is pushed
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - 'deploy'
