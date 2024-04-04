@@ -30,6 +30,10 @@ steps:
   - 'releases'
   - 'create'  # Replace with your service name
   - 'release-bta23qb'
-  - '--delivery-pipeline=demo-bta2y5x1'
+  - '--delivery-pipeline=demo-bta2y5x'
   - '--region'
-  - 'us-central1'  
+  - 'us-central1'
+  - '--platform'
+  - 'managed'
+  # Optional: if you want to allow unauthenticated access
+  - '--allow-unauthenticated'
