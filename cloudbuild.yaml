@@ -30,6 +30,6 @@ steps:
   - 'releases'
   - 'create'  # Replace with your service name
   - 'release-bta23qb'
-  - '--delivery-pipeline=demo-bta2y5x'
+  - '--delivery-pipeline=demo-bta2y5x1'
   - '--region'
   - 'us-central1'  
